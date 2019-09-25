@@ -1,5 +1,5 @@
 body {
-  background-color: lightblue;
+  background-color: white;
 }
 
 h1 {
@@ -22,4 +22,10 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.centre_full {
+	width: 100%;
+	display: block;
+	display: inline-block;
 }
