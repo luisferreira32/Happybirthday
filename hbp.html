@@ -5,11 +5,6 @@
 	<title>HBD2U</title>
 	<link rel="stylesheet" href="style.css">
 
-	<script type="text/javascript">
-		var loc = window.location.href;
-		document.getElementById('pname').innerHTML = loc;
-	</script>
-
 </head>
 <body>
 	<div class="wrappermid">
@@ -17,5 +12,11 @@
 		<p id="pname"></p>
 	</div>	 
 
+	<script type="text/javascript">
+		var loc = window.location.href;
+		var fields = loc.split("hbname=");
+		var name = fields[1]
+		document.getElementById('pname').innerHTML = name;
+	</script>
 </body>
 </html>
