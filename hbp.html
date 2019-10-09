@@ -13,10 +13,11 @@
 	</div>	 
 
 	<script type="text/javascript">
-		var loc = window.location.href;
+		var wid = window.location.href;
+		var loc = decodeURIComponent(wid);
 		var fields = loc.split("hbname=");
 		var name = fields[1]
-		document.getElementById('pname').innerHTML = name;
+		document.getElementById('pname').innerHTML = name.replace('+', ' ');
 	</script>
 </body>
 </html>
